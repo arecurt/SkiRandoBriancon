@@ -1,0 +1,85 @@
+<resources>
+    <string name="app_name">Ski Rando Briançon</string>
+
+    <string name="bottom_meteo_item">Météo</string>
+    <string name="bottom_collection_item">Webcams</string>
+    <string name="bottom_RSS_item">Sorties</string>
+    <string name="bottom_add_meteo_item">Ajouter</string>
+
+    <!-- Page d'accueil-->
+    <string name="home_page_title">Conditions actuelles</string>
+    <string name="home_page_last_ski_session">Choix des zones</string>
+    <string name="home_page_last_ski_session_subtitle">Pour avoir quelques idées : <a href="https://www.metaskirando.ovh/index.php">www.metaskirando.ovh</a></string>
+    <string name="home_page_link_road">Conditions de circulation</string>
+
+    <!-- Page Météo -->
+    <string name="page_meteo_title">Météo</string>
+    <string name="page_meteo_subtitle">Conditions météorologiques et de neige</string>
+    <string-array name="page_meteo_list_point">
+        <item>Col de l\'Izoard</item>
+        <item>Névache</item>
+        <item>Ailefroide</item>
+        <item>Col du Galibier</item>
+        <item>Pic du Mas de la Grave</item>
+        <item>Tête de Vautisse</item>
+    </string-array>
+
+    <!-- Page popup -->
+    <string name="popup_meteo_name">Météo du coin</string>
+    <string name="popup_meteo_description_title">Région</string>
+    <string name="popup_meteo_description_subtitle">Zone</string>
+    <string name="popup_meteo_altitude_title">Altitude de la météo</string>
+    <string name="popup_meteo_altitude_subtitle">Altitude</string>
+    <string name="popup_meteo_multimodel_title">Multimodel Météo</string>
+    <string name="popup_meteo_multimodel_subtitle">Cliquer sur le lien</string>
+
+    <!-- Page Ajout météo-->
+    <string name="add_meteo_page_upload_button">Charger Météo</string>
+    <string name="popup_meteo_page_name_input">Nom de la Météo</string>
+    <string name="popup_meteo_altitude_input">Altitude de la météo</string>
+    <string name="popup_meteo_page_url_meteo_input">Copier URL Météogramme</string>
+    <string name="popup_meteo_page_url_mutimodel_input">Copier URL MultiModel</string>
+    <string-array name="popup_meteo_page_list_point">
+        <item>Sélectionner la région</item>
+        <item>Queyras</item>
+        <item>Thabor</item>
+        <item>Pelvoux</item>
+        <item>Oisans</item>
+    </string-array>
+
+    <!-- Page BERA -->
+    <string name="page_bera_title">B.E.R.A</string>
+    <string name="page_bera_subtitle">Bulletin Estimatif des Risques d\'Avalanche à sélectionner :</string>
+    <string-array name="page_bera_list_button">
+        <item>Queyras</item>
+        <item>Thabor</item>
+        <item>Pelvoux</item>
+        <item>Oisans</item>
+    </string-array>
+
+    <!-- Page Nivologie -->
+    <string name="page_nivologie_title">Nivologie</string>
+    <string name="page_nivologie_subtitle">Enneigement dans les massifs</string>
+
+    <!-- Webcam -->
+    <string name="page_webcam_title">Webcams</string>
+    <string name="page_webcam_subtitle">Webcams autour de Briançon</string>
+    <string-array name="page_webcam_list_button">
+        <item>Col du Lautaret - 2058m</item>
+        <item>Col du Prorel - 2396m</item>
+        <item>Puy Saint Vincent 2700 "Crête des Bans" - 2700m</item>
+        <item>Pelvoux-Vallouise "Sommet de la crête" - 2300m</item>
+        <item>Montgenèvre "Sommet des Gondrans" - 2460m</item>
+        <item>Montgenèvre "Sommet du Chalvet" - 2577m</item>
+    </string-array>
+
+    <!-- Carte IGN -->
+    <string name="page_IGN_title">Carte IGN</string>
+    <string name="page_IGN_subtitle">Pour trouver une course proche de Briançon avec les cartes Topo 25</string>
+    <string name="home_page_last_ski_description">Description sortie ski rando</string>
+
+    <!-- Page RSS -->
+    <string name="page_RSS_title">Dernières sorties ski</string>
+    <string name="page_RSS_subtitle">Histoire d\'avoir des idées</string>
+
+</resources>

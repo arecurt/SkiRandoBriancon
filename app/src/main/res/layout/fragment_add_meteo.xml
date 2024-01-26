@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:padding="@dimen/defaut_margin">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/upload_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/add_meteo_page_upload_button"
+            android:background="@color/blue"
+            android:textColor="@color/white"
+            android:padding="@dimen/defaut_margin"
+            style="@style/titleTextStyle"/>
+
+         <ImageView
+             android:id="@+id/preview_image"
+             android:layout_width="wrap_content"
+             android:layout_height="match_parent"
+             android:scaleType="centerCrop"
+             android:src="@drawable/background_color_header"/>
+
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/name_input"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="@dimen/item_margin"
+        android:hint="@string/popup_meteo_page_name_input"
+        android:paddingLeft="@dimen/defaut_margin"
+        style="@style/DefaultTextStyle"/>
+
+    <Spinner
+        android:id="@+id/region_spinner"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="@dimen/item_margin"
+        android:entries ="@array/popup_meteo_page_list_point"
+        android:paddingLeft="@dimen/defaut_margin"
+        />
+
+    <EditText
+        android:id="@+id/altitude_input"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="@dimen/item_margin"
+        android:hint="@string/popup_meteo_altitude_input"
+        android:paddingLeft="@dimen/defaut_margin"
+        style="@style/DefaultTextStyle"/>
+
+    <EditText
+        android:id="@+id/url_meteo_input"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="@dimen/item_margin"
+        android:hint="@string/popup_meteo_page_url_meteo_input"
+        android:paddingLeft="@dimen/defaut_margin"
+        style="@style/DefaultTextStyle"
+        />
+
+    <EditText
+        android:id="@+id/multimodel_input"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="@dimen/item_margin"
+        android:hint="@string/popup_meteo_page_url_mutimodel_input"
+        android:paddingLeft="@dimen/defaut_margin"
+        style="@style/DefaultTextStyle"
+        />
+
+    <Button
+        android:id="@+id/confirm_button"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="@color/blue"
+        android:layout_marginTop="@dimen/defaut_margin"
+        android:text="CONFIRMER"
+        android:textSize="24dp"
+        android:textColor="@color/white"
+    />
+</LinearLayout>

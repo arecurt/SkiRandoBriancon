@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "669287618270",
+    "project_id": "skirandobriancon",
+    "storage_bucket": "skirandobriancon.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:669287618270:android:09050922c1af7523e8144f",
+        "android_client_info": {
+          "package_name": "fr.ecrinsdespatule.skirandobriancon"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "669287618270-umndkm554gkvs7egrb589p5gfk96m70d.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAOMZRBFZnxC1lPsc1hU6GitxYNFLUn-dU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "669287618270-umndkm554gkvs7egrb589p5gfk96m70d.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

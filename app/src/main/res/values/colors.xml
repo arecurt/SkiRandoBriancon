@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="ultralightgrey">#f1f1f1</color>
+    <color name="lightGrey">#7C7C7C</color>
+    <color name="darkBlue">#03274C</color>
+
+    <!--Définition des liens internet-->
+    <color name="red">#991515</color>
+
+    <!--Bouton BERA-->
+    <color name="blue">#05488C</color>
+    <color name="grey">#E6E6E6</color>
+
+</resources>

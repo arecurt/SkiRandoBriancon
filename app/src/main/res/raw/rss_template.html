@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="fr-FR">
+    <!DOCTYPE html>
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <style>
+        /* Mise en forme flux RSS*/
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            margin: 10px;
+        }
+        h2 {
+            padding : 0;
+            text-align: left;
+            font-weight: 600;
+            font-family: sans-serif;
+            margin: 0 0 5px 0;
+            font-size : 1em;
+        }
+        p {
+           text-align: center;
+           font-weight: 300;
+           margin: 2px 0 0 0;
+           font-size : 0.7em;
+        }
+    </style>
+        </head>
+        <body>
+            <h2>{{title}}</h2>
+            <p>{{description}}</p>
+
+            foreach ($rss_load->channel->item as $item){
+
+            echo "<a class='link' href='".$item->link."' target='_blank' rel='noopener noreferrer'>$title</a>.<br />";
+            echo "<p class='description'>$description"."<hr/>"."</p>";
+            };
+        </body>
+    </html>

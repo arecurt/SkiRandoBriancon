@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/home_page"
+        android:icon="@drawable/ic_meteo"
+        android:title="@string/bottom_meteo_item"/>
+    <item
+        android:id="@+id/bera_page"
+        android:title="@string/page_bera_title"
+        android:icon="@drawable/ic_risk"/>
+    <item
+        android:id="@+id/collection_page"
+        android:title="@string/bottom_collection_item"
+        android:icon="@drawable/ic_webcam"/>
+    <item
+        android:id="@+id/RSS_page"
+        android:title="@string/bottom_RSS_item"
+        android:icon="@drawable/ic_snow"/>
+    <item
+        android:id="@+id/IGN_page"
+        android:title="@string/page_IGN_title"
+        android:icon="@drawable/ic_ign"/>
+
+    <!-- <item
+         android:id="@+id/nivologie_page"
+         android:title="@string/page_nivologie_title"
+         android:icon="@drawable/ic_snow"/>
+
+         -->
+</menu>
