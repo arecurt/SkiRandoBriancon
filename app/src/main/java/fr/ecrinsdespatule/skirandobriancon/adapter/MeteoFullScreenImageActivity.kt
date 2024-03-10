@@ -2,10 +2,12 @@ package fr.ecrinsdespatule.skirandobriancon.adapter
 
 import android.net.Uri
 import android.os.Bundle
-import android.widget.HorizontalScrollView
 import android.widget.ImageView
 import androidx.appcompat.app.AppCompatActivity
 import com.bumptech.glide.Glide
+import com.bumptech.glide.load.engine.DiskCacheStrategy
+import com.bumptech.glide.request.RequestOptions
+import com.github.chrisbanes.photoview.PhotoView
 import fr.ecrinsdespatule.skirandobriancon.R
 
 class MeteoFullScreenImageActivity : AppCompatActivity() {
@@ -16,13 +18,20 @@ class MeteoFullScreenImageActivity : AppCompatActivity() {
         setupCloseButton()
 
         val imageUrl = intent.getStringExtra("imageUrl")
-        val imageView: ImageView = findViewById(R.id.fullScreenImageView)
+        val photoView: PhotoView = findViewById(R.id.fullScreenImageView)
 
-        Glide.with(this)
-            .load(Uri.parse(imageUrl))
-            .into(imageView)
+        val requestOptions = RequestOptions()
+            .diskCacheStrategy(DiskCacheStrategy.NONE)
+            .skipMemoryCache(true)
 
-        setupHorizontalScroll()
+        try {
+            Glide.with(this)
+                .load(Uri.parse(imageUrl))
+                .apply(requestOptions)
+                .into(photoView)
+        } catch (e: Exception) {
+            e.printStackTrace()
+        }
     }
 
     private fun setupCloseButton() {
@@ -30,8 +39,5 @@ class MeteoFullScreenImageActivity : AppCompatActivity() {
             finish()
         }
     }
-
-    private fun setupHorizontalScroll() {
-        val horizontalScrollView: HorizontalScrollView = findViewById(R.id.horizontalScrollView)
-    }
 }
+

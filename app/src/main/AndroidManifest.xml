@@ -29,7 +29,7 @@
         <activity
             android:name=".adapter.MeteoFullScreenImageActivity"
             android:label="Full Screen Image">
-    </activity>
+        </activity>
 </application>
 
 </manifest>

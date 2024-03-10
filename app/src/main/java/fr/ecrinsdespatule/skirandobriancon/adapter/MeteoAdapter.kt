@@ -86,17 +86,21 @@ class MeteoAdapter(
             MeteoPopup(this, currentMeteo).show()
         }*/
 
-        //interaction lors du click sur la météo
+// Interaction lors du clic sur la météo
         holder.itemView.setOnClickListener {
             // Vérifier si c'est un RecyclerView horizontal ou vertical
-            if (layoutId == R.layout.item_horizontal_meteo) {
-                // Ouvrir l'activité en plein écran pour afficher l'image en grand
-                val intent = Intent(context, MeteoFullScreenImageActivity::class.java)
-                intent.putExtra("imageUrl", currentMeteo.imageUrl)
-                context.startActivity(intent)
-            } else if (layoutId == R.layout.item_vertical_meteo) {
-                // Ouvrir la MeteoPopup que vous avez programmée
-                MeteoPopup(this, currentMeteo).show()
+            when (layoutId) {
+                R.layout.item_horizontal_meteo -> {
+                    // Ouvrir l'activité en plein écran pour afficher l'image en grand
+                    val intent = Intent(context, MeteoFullScreenImageActivity::class.java)
+                    intent.putExtra("imageUrl", currentMeteo.imageUrl)
+                    context.startActivity(intent)
+                }
+                R.layout.item_vertical_meteo -> {
+                    // Ouvrir la MeteoPopup que vous avez programmée
+                    MeteoPopup(this, currentMeteo).show()
+                }
+                // Ajoutez d'autres cas si nécessaire
             }
         }
     }
